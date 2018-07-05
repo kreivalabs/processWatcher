@@ -11,7 +11,7 @@
 
 # ver 1.2.1
 # 2018-05-12
-# add piped output to log file for testing
+# Update formatting, add header for clarity
 
 # Previous: 
 
