@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# @file: izzyWatcher_v01_02_01.sh
+# @file: izzyWatcher.sh
 # @author: Brendan Hogan
 # @version: 1.3.0
 # @update: 2018-07-05
