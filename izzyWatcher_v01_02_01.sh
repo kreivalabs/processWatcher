@@ -2,18 +2,22 @@
 
 # @file: izzyWatcher_v01_02_01.sh
 # @author: Brendan Hogan
-# @version: 1.2.1
-# @update: 2018-05-12
+# @version: 1.3.0
+# @update: 2018-07-05
 
 # Version history:
 
 # Current:
 
+# ver 1.3.0
+# 2018-07-05
+# REMOVE piped output function; Update formatting; add header for clarity
+
+# Previous:
+
 # ver 1.2.1
 # 2018-05-12
-# Update formatting, add header for clarity
-
-# Previous: 
+# Add piped output function for troubleshooting
 
 # ver 1.2.0
 # 2018-05-12
