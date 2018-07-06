@@ -2,18 +2,22 @@
 
 # @file: izzyWatcher.sh
 # @author: Brendan Hogan
-# @version: 1.3.0
+# @version: 1.3.1
 # @update: 2018-07-05
 
 # Version history:
 
 # Current:
 
+# ver 1.3.1
+# 2018-07-05
+# update line width; add attribution to Jim Bell
+
+# Previous:
+
 # ver 1.3.0
 # 2018-07-05
 # REMOVE piped output function; Update formatting; add header for clarity
-
-# Previous:
 
 # ver 1.2.1
 # 2018-05-12
@@ -39,23 +43,29 @@
 
 # This script launches an Isadora patch, then runs a shell watcher loop.
 # It will check every 10 seconds that the process named 'Isadora' exists. 
-# If it does not, the script will re-open the target patch and continue the loop.
+# If it does not, the script will re-open the target patch and continue 
+# the loop.
+
+# Based on Jim Bell's script for `Generativity` by Fernanda D'Agostino,
+# Suyama Space, Seattle WA, 2016
+
+# -----------------------------------------------------------------------------
 
 # Print some information to the terminal explaining how this works:
 clear
-echo "----------------------------------------------------------------------------------"
-echo " ISADORA WATCHER                                                                  "
-echo " Launch an Isadora patch and verify that process exists every 10 seconds.         " 						
-echo " Restart Isadora if it crashes.                                                   " 
-echo "                                                                                  "
-echo " Sleeping for 10 seconds. Allowing other boot processes to complete.              "
-echo "----------------------------------------------------------------------------------"
+echo "-------------------------------------------------------------------------"
+echo " ISADORA WATCHER                                                         "
+echo " Launch an Isadora patch and verify that process exists every 10 seconds." 						
+echo " Restart Isadora if it crashes.                                          " 
+echo "                                                                         "
+echo " Sleeping for 10 seconds. Allowing other boot processes to complete.     "
+echo "-------------------------------------------------------------------------"
 sleep 10
 echo ""
-echo "----------------------------------------------------------------------------------"
-echo " Launching Isadora patch.                                                         "												
-echo " Beginning WATCHER loop.                                                          "	
-echo "----------------------------------------------------------------------------------"
+echo "-------------------------------------------------------------------------"
+echo " Launching Isadora patch.                                                "												
+echo " Beginning WATCHER loop.                                                 "	
+echo "-------------------------------------------------------------------------"
 echo ""
 sleep 2
 
@@ -66,7 +76,8 @@ sleep 2
 until [ 0 = 1 ]
 
 # Define reboot and shutdown procedures.
-# If using timed reboot or halt procedures, make this script executable with chmod u+x.
+# If using timed reboot or halt procedures, make this script executable 
+# with chmod u+x.
 sudo shutdown -r 11:30 		# Reboot the machine at 11:30AM
 sudo shutdown -r 17:30 		# Reboot the machine at 5:30PM			
 sudo shutdown -h 23:00 		# Shutdown (halt) the machine at 11:00PM			
