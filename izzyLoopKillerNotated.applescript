@@ -34,8 +34,8 @@ try
 				quit
 				delay 1
 				tell application "Isadora" -- replace name in quotes with 
-				-- another app name to repurpose this script for other 
-				-- applications
+					-- another app name to repurpose this script for other 
+					-- applications
 					quit
 				end tell
 			end tell
